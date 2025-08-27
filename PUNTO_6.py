@@ -7,9 +7,10 @@ d_cilindro = 300 # mm
 l_cilindro = 90  # mm
 
 #fuerza de avance
-fuerza_avance = abs((p_entrada - p_salida) * (math.pi * (d_cilindro/2)**2))
+fuerza_avance = abs(p_entrada * (math.pi * (d_cilindro/2)**2))
 print("Fuerza de avance:", fuerza_avance, "N")
 
 #fuerza de retroceso
 fuerza_retroceso = abs(p_salida * (math.pi * (d_cilindro/2)**2))
 print("Fuerza de retroceso:", fuerza_retroceso, "N")
+
